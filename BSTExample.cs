@@ -37,8 +37,8 @@ namespace Prog260_W24_BinarySearchTree_022824
                 return new TreeNode(data);
             }
 
-            // Randomly decide whether to insert left or right.
-            if (new Random().Next(2) == 0)
+            
+            if (data < root.Data)
             {
                 root.Left = Insert(root.Left, data);
             }
